@@ -28,7 +28,7 @@ our @EXPORT = qw(
 	
 );
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 sub clean_authors {
 	my $self = shift;
@@ -108,19 +108,25 @@ __END__
 
 =head1 NAME
 
-WWW::Scraper::ISBN::ISBNnu_Driver - Driver for WWW::Scraper::ISBN that searches http://www.isbn.nu/.
+WWW::Scraper::ISBN::ISBNnu_Driver - Driver for L<WWW::Scraper::ISBN> that searches L<http://www.isbn.nu/>.
 
 =head1 SYNOPSIS
 
-See parent class documentation (WWW::Scraper::ISBN::Driver)
+See parent class documentation (L<WWW::Scraper::ISBN::Driver>)
 
 =head1 REQUIRES
 
 Requires the following modules be installed:
 
-WWW::Scraper::ISBN::Driver
-HTTP::Request::Common
-LWP::UserAgent
+=over 4
+
+=item L<WWW::Scraper::ISBN::Driver>
+
+=item L<HTTP::Request::Common>
+
+=item L<LWP::UserAgent>
+
+=back
 
 =head1 DESCRIPTION
 
@@ -128,17 +134,19 @@ Searches for book information from http://www.isbn.nu/.
 
 =head1 METHODS
 
-=head2 clean_authors()
+=over 4
+
+=item C<clean_authors()>
 
 Cleans junk from authors field.
 
-=head2 trim()
+=item C<trim()>
 
 Trims excess whitespace.
 
-=head2 search()
+=item C<search()>
 
-Grabs page from http://www.isbn.nu/'s handy interface and attempts to extract the desired information.
+Grabs page from L<http://www.isbn.nu/>'s handy interface and attempts to extract the desired information.
 
 =head2 EXPORT
 
@@ -146,15 +154,23 @@ None by default.
 
 =head1 SEE ALSO
 
-WWW::Scraper::ISBN
-WWW::Scraper::Record
-WWW::Scraper::Driver
+=over 4
 
-No mailing list or website currently available.  Primary development done through CSX [http://csx.calvin.edu/]
+=item L<< WWW::Scraper::ISBN >>
+
+=item L<< WWW::Scraper::ISBN::Record >>
+
+=item L<< WWW::Scraper::ISBN::Driver >>
+
+=back
+
+No mailing list or website currently available.  Primary development done through CSX ( L<http://csx.calvin.edu/> )
+
+=back
 
 =head1 AUTHOR
 
-Andy Schamp, E<lt>ams5@calvin.eduE<gt>
+Andy Schamp, E<lt>andy@schamp.netE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
