@@ -8,7 +8,7 @@ use WWW::Scraper::ISBN::Driver;
 
 our @ISA = qw(WWW::Scraper::ISBN::Driver);
 
-our $VERSION = '0.17';
+our $VERSION = '0.18';
 
 sub clean_authors {
 	my $self = shift;
@@ -126,7 +126,14 @@ Trims excess whitespace.
 
 =item C<search()>
 
-Grabs page from L<http://www.isbn.nu/>'s handy interface and attempts to extract the desired information.
+Grabs page from L<http://www.isbn.nu/>'s handy interface and attempts to 
+extract the desired information.  If a valid result is returned the 
+following fields are returned:
+
+   isbn
+   author
+   title
+   edition
 
 =head2 EXPORT
 
