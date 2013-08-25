@@ -1,10 +1,23 @@
-Revision history for Perl extension WWW::Scraper::ISBN::ISBNnu_Driver.
+Revision history for WWW::Scraper::ISBN::ISBNnu_Driver
+======================================================
 
-0.17 - 04/06/2004 - A. Schamp
-	Removed Exporter and perl versioning stuff
-	by user request
+0.19    2013-08-25
+        - New Maintainer: Barbie.
+        - move module into lib directory structure.
+        - change file dates changed to meet W3CDTF standards.
+        - reworked Makefile.PL for clarity.
+        - added META.json and updated META.yml.
+        - extended test suite.
+        - documentation updates.
+        - switched to WWW::Mechanize.
+        - fixed pattern matching, and updated error handling.
 
-0.16 - 3/30/2004
-	Started using Changes file ;)
-	Cleaned up documentation a bit.
+0.18    2004-04-13
+        - documentation updates.
 
+0.17    2004-04-06
+	    - Removed Exporter and perl versioning stuff by user request
+
+0.16    2004-03-30
+	    - Started using Changes file ;)
+	    - Cleaned up documentation a bit.

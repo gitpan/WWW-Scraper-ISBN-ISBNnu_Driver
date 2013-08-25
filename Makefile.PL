@@ -1,13 +1,29 @@
 use ExtUtils::MakeMaker;
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use 5.006;
+
+use ExtUtils::MakeMaker;
+
 WriteMakefile(
-    'NAME'		=> 'WWW::Scraper::ISBN::ISBNnu_Driver',
-    'VERSION_FROM'	=> 'ISBNnu_Driver.pm', # finds $VERSION
-    'PREREQ_PM'		=> { 
-			HTTP::Request::Common => 1.19,
-			LWP::UserAgent => 2.0,
-			WWW::Scraper::ISBN::Driver => 0.15  }, # e.g., Module::Name => 1.1
-    ($] >= 5.005 ?    ## Add these new keywords supported since 5.005
-       (AUTHOR     => 'Andy Schamp <andy@schamp.net>') : ()),
+    AUTHOR              => 'Barbie <barbie@cpan.org>',
+    NAME                => 'WWW::Scraper::ISBN::ISBNnu_Driver',
+    VERSION_FROM        => 'lib/WWW/Scraper/ISBN/ISBNnu_Driver.pm',
+    ABSTRACT            => 'Search driver for the isbn.nu online book catalog',
+    NO_META             => 1,
+    PREREQ_PM           => {
+
+        # runtime prereqs
+        'WWW::Mechanize'                => '1.60',
+        'WWW::Scraper::ISBN::Driver'    => '0.15',
+
+        # build/test prereqs
+        'IO::File'                      => '0',
+        'Test::More'                    => '0.70'
+
+    }
 );
