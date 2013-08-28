@@ -3,7 +3,7 @@ package WWW::Scraper::ISBN::ISBNnu_Driver;
 use strict;
 use warnings;
 
-our $VERSION = '0.19';
+our $VERSION = '0.20';
 
 #--------------------------------------------------------------------------
 
@@ -65,7 +65,7 @@ sub search {
     }
 
     return $self->handler("Failed to find that book on the isbn.nu website.")
-        if (($data{title} eq "") || ($data{title} eq "No Title Found"));
+        if (!$data{title} || $data{title} eq "No Title Found");
 
     ($data{publisher})  = $html =~ m!<span class="bi_col_title">Publisher</span>\s*<span class="bi_col_value">([^<]+)</span></div>!si;
     ($data{pubdate})    = $html =~ m!<span class="bi_col_title">Publication date</span>\s*<span class="bi_col_value">([^<]+)</span></div>!;

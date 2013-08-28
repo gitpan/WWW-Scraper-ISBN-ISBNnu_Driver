@@ -1,6 +1,9 @@
 Revision history for WWW::Scraper::ISBN::ISBNnu_Driver
 ======================================================
 
+0.20    2013-08-28
+        - updated pre-requisites.
+
 0.19    2013-08-25
         - New Maintainer: Barbie.
         - move module into lib directory structure.
@@ -11,6 +14,9 @@ Revision history for WWW::Scraper::ISBN::ISBNnu_Driver
         - documentation updates.
         - switched to WWW::Mechanize.
         - fixed pattern matching, and updated error handling.
+        - Fixed RT#31030, thanks to G. Allen Morris III (GAM).
+        - Fixed RT#18601, thanks to Ulixes.
+        - Fixed RT#14333, thanks to Menno Blom (BLOM)
 
 0.18    2004-04-13
         - documentation updates.

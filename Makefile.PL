@@ -19,7 +19,8 @@ WriteMakefile(
 
         # runtime prereqs
         'WWW::Mechanize'                => '1.60',
-        'WWW::Scraper::ISBN::Driver'    => '0.15',
+        'WWW::Scraper::ISBN'            => '0.27',
+        'WWW::Scraper::ISBN::Driver'    => '0.20',
 
         # build/test prereqs
         'IO::File'                      => '0',
