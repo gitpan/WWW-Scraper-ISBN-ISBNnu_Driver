@@ -1,6 +1,6 @@
 {
     "name": "WWW-Scraper-ISBN-ISBNnu_Driver",
-    "version": "0.20",
+    "version": "0.21",
     "abstract": "Search driver for the isbn.nu online book catalog",
     "author": [
       "Andy Schamp <andy@schamp.net>",
@@ -31,6 +31,7 @@
         },
         "test" : {
             "requires": {
+                "Data::Dumper": "0",
                 "IO::File": "0",
                 "Test::More": "0.70"
             },
@@ -46,7 +47,7 @@
     "provides": {
         "WWW::Scraper::ISBN::ISBNnu_Driver": {
             "file": "lib/WWW/Scraper/ISBN/ISBNnu_Driver.pm",
-            "version": "0.20"
+            "version": "0.21"
         }
     },
     "no_index": {

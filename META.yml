@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                     WWW-Scraper-ISBN-ISBNnu_Driver
-version:                  0.20
+version:                  0.21
 abstract:                 Search driver for the isbn.nu online book catalog
 author:
   - Andy Schamp <andy@schamp.net>
@@ -21,13 +21,14 @@ recommends:
   Test::Pod:                      1.00
   Test::Pod::Coverage:            0.08
 build_requires:
-  IO::File:                       0
-  Test::More:                     0.70
+  Data::Dumper:                 0
+  IO::File:                     0
+  Test::More:                   0.70
 
 provides:
   WWW::Scraper::ISBN::ISBNnu_Driver:
     file:     lib/WWW/Scraper/ISBN/ISBNnu_Driver.pm
-    version:  0.20
+    version:  0.21
 
 no_index:
   directory:

@@ -3,7 +3,7 @@ package WWW::Scraper::ISBN::ISBNnu_Driver;
 use strict;
 use warnings;
 
-our $VERSION = '0.20';
+our $VERSION = '0.21';
 
 #--------------------------------------------------------------------------
 
@@ -176,12 +176,12 @@ following fields are returned:
 =head1 AUTHOR
 
   2004-2013 Andy Schamp, E<lt>andy@schamp.netE<gt>
-  2013      Barbie, E<lt>barbie@cpan.orgE<gt>
+  2013-2014 Barbie, E<lt>barbie@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
   Copyright 2004-2013 by Andy Schamp
-  Copyright 2013 by Barbie
+  Copyright 2013-2014 by Barbie
 
   This distribution is free software; you can redistribute it and/or
   modify it under the Artistic Licence v2.

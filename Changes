@@ -1,6 +1,9 @@
 Revision history for WWW::Scraper::ISBN::ISBNnu_Driver
 ======================================================
 
+0.21    2014-03-27
+        - added standalone LICENSE file.
+
 0.20    2013-08-28
         - updated pre-requisites.
 
