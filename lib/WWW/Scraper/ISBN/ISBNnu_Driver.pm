@@ -3,7 +3,7 @@ package WWW::Scraper::ISBN::ISBNnu_Driver;
 use strict;
 use warnings;
 
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 #--------------------------------------------------------------------------
 
@@ -60,9 +60,8 @@ sub search {
         if($@ || !$mech->success() || !$mech->content());
 
     my $html = $mech->content();
-    if ($html =~ /<title>([^<]+)<\/title>/) {
-        $data{title} = $self->trim($1);
-    }
+    my ($title) = $html =~ /<title>([^<]+)<\/title>/;
+    $data{title} = $self->trim($title);
 
     return $self->handler("Failed to find that book on the isbn.nu website.")
         if (!$data{title} || $data{title} eq "No Title Found");
@@ -140,10 +139,6 @@ Searches for book information from http://www.isbn.nu/.
 
 =over 4
 
-=item C<clean_authors()>
-
-Cleans junk from authors field.
-
 =item C<trim()>
 
 Trims excess whitespace.
@@ -154,10 +149,24 @@ Grabs page from L<http://www.isbn.nu/>'s handy interface and attempts to
 extract the desired information.  If a valid result is returned the 
 following fields are returned:
 
-   isbn
-   author
-   title
-   edition
+  isbn          (now returns isbn13)
+  isbn10        
+  isbn13
+  ean13         (industry name)
+  title
+  author
+  edition
+  volume
+  book_link
+  publisher
+  pubdate
+  binding       (if known)
+  pages         (if known)
+  weight        (if known) (in grammes)
+  width         (if known) (in millimetres)
+  height        (if known) (in millimetres)
+  depth         (if known) (in millimetres)
+  description   (if known)
 
 =back
 

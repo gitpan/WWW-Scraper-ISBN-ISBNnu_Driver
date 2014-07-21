@@ -77,8 +77,8 @@ SKIP: {
             if($record && $record->error =~ /Language.*?not currently supported/);
 
         for my $isbn (keys %tests) {
-            $record = $scraper->search($isbn);
-            my $error  = $record->error || '';
+            eval { $record = $scraper->search($isbn) };
+            my $error = $@ || $record->error || '';
 
             SKIP: {
                 skip "Language not supported", scalar(@{ $tests{$isbn} }) + 2   

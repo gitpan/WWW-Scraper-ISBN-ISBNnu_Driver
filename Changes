@@ -1,5 +1,12 @@
-Revision history for WWW::Scraper::ISBN::ISBNnu_Driver
-======================================================
+Revision history for WWW-Scraper-ISBN-ISBNnu_Driver
+===================================================
+
+0.22    2014-07-21
+        - fixed distribution name in META.
+        - upgrade to WWW-Scraper-ISBN-1.00.
+        - removed obsolete documentation.
+        - extended test suite.
+        - updated list of documentated return fields.
 
 0.21    2014-03-27
         - added standalone LICENSE file.
