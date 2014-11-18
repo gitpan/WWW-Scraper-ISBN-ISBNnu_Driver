@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                     WWW-Scraper-ISBN-ISBNnu_Driver
-version:                  0.23
+version:                  0.24
 abstract:                 Search driver for the isbn.nu online book catalog
 author:
   - Andy Schamp <andy@schamp.net>
@@ -28,7 +28,7 @@ build_requires:
 provides:
   WWW::Scraper::ISBN::ISBNnu_Driver:
     file:     lib/WWW/Scraper/ISBN/ISBNnu_Driver.pm
-    version:  0.23
+    version:  0.24
 
 no_index:
   directory:
@@ -43,4 +43,4 @@ resources:
 meta-spec:
    version:   1.4
    url:       http://module-build.sourceforge.net/META-spec-v1.4.html
-generated_by: Hand 1.0
+generated_by: The Hand of Barbie 1.0

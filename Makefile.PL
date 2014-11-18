@@ -11,7 +11,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     AUTHOR              => 'Barbie <barbie@cpan.org>',
-    NAME                => 'WWW-Scraper-ISBN-ISBNnu_Driver',
+    NAME                => 'WWW::Scraper::ISBN::ISBNnu_Driver',
     VERSION_FROM        => 'lib/WWW/Scraper/ISBN/ISBNnu_Driver.pm',
     ABSTRACT            => 'Search driver for the isbn.nu online book catalog',
     NO_META             => 1,
